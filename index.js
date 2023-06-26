@@ -1,7 +1,8 @@
 const express = require("express");
 const path = require('path');
-const {connection} = require("../backend/config/db")
+// const {connection} = require("./config/db")
 // const nodemailer = require('nodemailer');
+const { connection } = require("./config/db");
 const cors = require("cors");
 const nodemailer = require('nodemailer');
 const { userRoute } = require("./routes/user.route");const app = express();
@@ -9,7 +10,7 @@ const http = require("http");
 
 
 const httpserver = http.createServer(app);
-
+// connection
 
 app.use(express.json())
 app.use(cors())
