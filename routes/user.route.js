@@ -65,7 +65,7 @@ userRoute.post('/signup', async (req, res) => {
     // Encode the serialized JSON as a URL-safe string
     const encodedData = encodeURIComponent(userData);
   
-    res.redirect(`http://127.0.0.1:5500/frontend/login.html?user=${encodedData}`)
+    res.redirect(`https://front-end-chatapp.vercel.app/login.html?user=${encodedData}`)
   });
 
 
